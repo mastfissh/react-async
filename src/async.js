@@ -23,7 +23,7 @@ class Async extends React.Component {
         resolved: res,
         finished: true
       })
-    }, (err) => {
+    }).catch((err) => {
       this.setState({
         rejected: err,
         finished: true
